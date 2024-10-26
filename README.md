@@ -19,22 +19,22 @@ The two tables must have the same set of column names.
 
 **layoff1**
 - Transform column types to percentage
-- Replace Other Industry to ""
-- Replace Unknown stage to ""
-- Trim the text columns
-- Rename "location" to "city"
-- Remove duplicates
-- Add a new column called "StageRanking"
+- Trim the text column
+- Add a new column called "stage_ranking"
   `if Text.Contains([stage], "IPO") then 90 else if Text.Contains([stage], "Private") then 80 else if Text.Contains([stage], "Subsidiary") then 20 else if Text.Contains([stage], "Acquired") then 30 else if Text.Contains([stage], "Merged") then 30 else if [stage] = "Seed" then 40 else if [stage] = "Series A" then 50 else if [stage] = "Series B" then 50 else if [stage] = "Series C" then 50 else if Text.StartsWith([stage], "Series") then 60 else 0`
-- Filter out empty lines
-- Add a new column called "Key"
+- Add a new column called "key"
 `Text.Combine({[company], "|", Date.ToText([date], "yyyy"),Date.ToText([date], "MM"), Date.ToText([date], "dd")})`
+- Set column names:
+- [company, city, industry, layoff_count, layoff_percentage, date, stage, country, funds_raised, stage_ranking, key]
 
 **layoff2**
 - Do it yourself
+- Notes
+  - Need to rename most columns
+  - Remove unnecessary columns
+  - When adding key and stage_ranking columns, make sure your command is consistent with the column names
 
 **merging**
-- Reorder columns
-`{"Key", "company", "city", "industry", "total_laid_off", "date", "source", "funds_raised", "stage", "date_added", "country", "percentage_laid_off", "location", "Stage Ranking"}`
+- Append as new
 - Remove duplicates
 - Replace null with 0 for `percentage_laid_off`
