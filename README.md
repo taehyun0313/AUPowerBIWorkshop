@@ -12,6 +12,11 @@
 - Set-up refresh
 
 ## Data Cleaning
+
+Your goal is to append the two data tables row-wise, and remove duplicates.
+We will create column "Key" = "{CompanyName}|{LayoffDate}" to remove duplicates.
+The two tables must have the same set of column names.
+
 **layoff1**
 - Transform column types to percentage
 - Replace Other Industry to ""
@@ -26,15 +31,7 @@
 `Text.Combine({[company], "|", Date.ToText([date], "yyyy"),Date.ToText([date], "MM"), Date.ToText([date], "dd")})`
 
 **layoff2**
-- Transform column type to percentage
-- Replace Other Industry `Industry` to ""
-- Replace Unknown `Stage` to ""
-- Trim the text columns
-- Rename "Location_City" to "city"
-- Remove duplicates
-- Add a new column called "StageRanking" (similar to the first table)
-- Filter out empty lines
-- Add a new column called "Key" (similar to the first table)
+- Do it yourself
 
 **merging**
 - Reorder columns
