@@ -9,7 +9,7 @@
   - connect to data lake (add destinations)
 - Go to data lake "Reporting" tab, create new report
 - Make visualizations
-- Set-up refresh
+- Set-up refresh in data flow
 
 ## Data Cleaning
 
