@@ -39,4 +39,4 @@ The two tables must have the same set of column names.
 **merging**
 - Append as new
 - Remove duplicates
-- Replace null with 0 for `percentage_laid_off`
+- Replace null with 0 for LayoffPercentage and LayoffCount
