@@ -25,7 +25,7 @@ The two tables must have the same set of column names.
 - Add a new column called "key"
 `Text.Combine({[company], "|", Date.ToText([date], "yyyy"),Date.ToText([date], "MM"), Date.ToText([date], "dd")})`
 - Set column names:
-- [company, city, industry, layoff_count, layoff_percentage, date, stage, country, funds_raised, stage_ranking, key]
+- [Company, City, Industry, LayoffCount, LayoffPercentage, Date, Stage, Country, FundsRaised, StageRanking, Key]
 
 **layoff2**
 - Do it yourself
