@@ -35,6 +35,8 @@ The two tables must have the same set of column names.
   - When adding key and stage_ranking columns, make sure your command is consistent with the column names
   - Rename columns (order does not need to match)
   - Remove unnecessary columns
+
+If time runs out, download layoff.xlsx. 
     
 **merging**
 - Append as new
