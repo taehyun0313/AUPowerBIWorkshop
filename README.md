@@ -30,10 +30,12 @@ The two tables must have the same set of column names.
 **layoff2**
 - Do it yourself
 - Notes
-  - Need to rename most columns
-  - Remove unnecessary columns
+  - Transform % column type
+  - Trim text column
   - When adding key and stage_ranking columns, make sure your command is consistent with the column names
-
+  - Rename columns
+  - Remove unnecessary columns
+    
 **merging**
 - Append as new
 - Remove duplicates
