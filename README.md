@@ -33,7 +33,7 @@ The two tables must have the same set of column names.
   - Transform % column type
   - Trim text column
   - When adding key and stage_ranking columns, make sure your command is consistent with the column names
-  - Rename columns
+  - Rename columns (order does not need to match)
   - Remove unnecessary columns
     
 **merging**
