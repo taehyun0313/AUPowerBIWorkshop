@@ -1,6 +1,7 @@
 # AUPowerBIWorkshop
 
 ## Creating Report in Fabric
+- Download data sets from this repo to your local laptop (source: https://www.kaggle.com/datasets/swaptr/layoffs-2022)
 - Create new workspace
 - Create new data lake
 - Create new data flow Gen2
