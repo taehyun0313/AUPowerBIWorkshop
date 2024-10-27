@@ -19,6 +19,7 @@ We will create column "Key" = "{CompanyName}|{LayoffDate}" to remove duplicates.
 The two tables must have the same set of column names.
 
 **layoff1**
+- Remove "null" values from layoff percentage and layoff counts
 - Transform column types to percentage
 - Trim the text column
 - Add a new column called "stage_ranking"
