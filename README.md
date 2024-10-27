@@ -41,4 +41,4 @@ If time runs out, download layoff.xlsx.
 **merging**
 - Append as new
 - Remove duplicates
-- Replace null with 0 for LayoffPercentage and LayoffCount
+- Remove null percentage and counts.
