@@ -7,8 +7,8 @@
 - Create new data flow Gen2
   - import data table
     - rename layoff_data to layoffs2
-  - clean and prep data (for details, see below)
-  - connect to data lake (add destinations)
+  - clean and prep data (I did this for you)
+  - connect to data lake
 - Go to data lake "Reporting" tab, create new report
 - Make visualizations
 - Set-up refresh in data flow
