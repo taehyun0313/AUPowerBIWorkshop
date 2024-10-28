@@ -11,7 +11,7 @@
 - Go to data lake "Reporting" tab, create new report
 - Make visualizations
     - map chart
-    - stacked bar + line chart
+    - stacked bar + line chart + set alerts
     - adding filter
     - tooltip
     - changing color
