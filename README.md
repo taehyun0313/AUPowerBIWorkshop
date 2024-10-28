@@ -10,6 +10,11 @@
   - connect to data lake
 - Go to data lake "Reporting" tab, create new report
 - Make visualizations
+    - map chart
+    - stacked bar + line chart
+    - adding filter
+    - tooltip
+    - changing color
 - Set-up refresh in data flow
 
 ## Data Prep Details
@@ -25,3 +30,5 @@ Load Layoff2_cleaned, and rename it to "layoff2"
 **merging**
 - Append as new
 - Remove duplicates using the key column
+
+
