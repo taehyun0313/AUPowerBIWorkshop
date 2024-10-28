@@ -18,7 +18,8 @@ Load Layoff1_cleaned, and rename it to "layoff1"
 Load Layoff2_cleaned, and rename it to "layoff2"
 
 **creating new columns**
-- Add a new column called "Key"
+- Add a new column called "Key" : 
+  
 `Text.Combine({[Company], "|", Date.ToText([Date], "yyyy"),Date.ToText([Date], "MM"), Date.ToText([Date], "dd")})`
 
 **merging**
