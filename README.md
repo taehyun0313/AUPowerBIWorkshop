@@ -5,16 +5,22 @@
 - Create new workspace
 - Create new data lake
 - Create new data flow Gen2
-  - import data table
-    - rename layoff_data to layoffs2
-  - clean and prep data (I did this for you)
+  - import data tables
+  - clean and prep data - I did this for you, mostly - see next section. 
   - connect to data lake
 - Go to data lake "Reporting" tab, create new report
 - Make visualizations
 - Set-up refresh in data flow
 
-## Data Cleaning
+## Data Prep Details
+**renaming tables**
+Load Layoff1_cleaned, and rename it to "layoff1"
+Load Layoff2_cleaned, and rename it to "layoff2"
+
+**creating new columns**
+- Add a new column called "Key"
+`Text.Combine({[Company], "|", Date.ToText([Date], "yyyy"),Date.ToText([Date], "MM"), Date.ToText([Date], "dd")})`
 
 **merging**
 - Append as new
-- Remove duplicates
+- Remove duplicates using the key column
